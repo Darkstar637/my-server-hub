@@ -2,34 +2,34 @@ import { Shield, Zap, Users, Sword, Map, Sparkles } from "lucide-react";
 
 const features = [
   {
-    icon: Zap,
-    title: "Low Latency",
-    description: "Experience smooth gameplay with our optimized servers and worldwide network coverage.",
-  },
-  {
     icon: Shield,
-    title: "Anti-Cheat",
-    description: "Play fair with our advanced anti-cheat system that keeps the server clean.",
+    title: "Safe & Chill",
+    description: "Whitelisted server – only friends and trusted players allowed. No griefers here.",
   },
   {
     icon: Users,
-    title: "Active Community",
-    description: "Join thousands of active players and make new friends every day.",
+    title: "Friend Group",
+    description: "A small, tight-knit community where everyone knows each other.",
   },
   {
     icon: Sword,
-    title: "PvP Battles",
-    description: "Compete in intense PvP battles, tournaments, and leaderboard competitions.",
+    title: "Survival Focus",
+    description: "Vanilla-style survival with a few quality-of-life plugins to make life easier.",
   },
   {
     icon: Map,
-    title: "Custom Maps",
-    description: "Explore unique custom-built maps and worlds exclusive to our server.",
+    title: "Shared World",
+    description: "Build together, explore together. One world we all call home.",
+  },
+  {
+    icon: Zap,
+    title: "Always Online",
+    description: "Server's up 24/7 so hop on whenever you're free to play.",
   },
   {
     icon: Sparkles,
-    title: "Weekly Events",
-    description: "Participate in weekly events with exclusive rewards and special prizes.",
+    title: "Helpful Plugins",
+    description: "Teleports, homes, and land claims to keep your builds safe.",
   },
 ];
 
@@ -40,10 +40,10 @@ const Features = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="minecraft-text text-4xl md:text-5xl text-foreground mb-4">
-            Why Choose <span className="text-primary glow-text">Us</span>
+            What We <span className="text-primary glow-text">Offer</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            We provide the best Minecraft server experience with top-tier performance and features.
+            A laid-back server built for good times with friends.
           </p>
         </div>
 

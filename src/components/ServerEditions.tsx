@@ -47,10 +47,10 @@ const ServerEditions = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="minecraft-text text-4xl md:text-5xl text-foreground mb-4">
-            Server <span className="text-primary glow-text">Editions</span>
+            How To <span className="text-primary glow-text">Join</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Play on any platform. We support both Java and Bedrock editions.
+            Jump in from Java or Bedrock – everyone's welcome!
           </p>
         </div>
 
