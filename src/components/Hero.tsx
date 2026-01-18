@@ -35,13 +35,13 @@ const Hero = () => {
 
         {/* Title */}
         <h1 className="minecraft-text text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-4 glow-text">
-          MC<span className="text-primary">SERVER</span>
+          FRIEND<span className="text-primary">CRAFT</span>
         </h1>
         
         {/* Subtitle */}
         <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Join the ultimate Minecraft experience. Play with friends, build amazing worlds, 
-          and compete in exciting minigames.
+          A chill survival server for friends. No drama, just good vibes, 
+          epic builds, and adventures together.
         </p>
 
         {/* Server IP Box */}
@@ -80,7 +80,7 @@ const Hero = () => {
         <div className="mt-12 flex items-center justify-center gap-2 text-muted-foreground">
           <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
           <span className="text-sm">
-            <span className="text-primary font-semibold">247</span> players online now
+            <span className="text-primary font-semibold">Friends</span> are waiting for you!
           </span>
         </div>
       </div>

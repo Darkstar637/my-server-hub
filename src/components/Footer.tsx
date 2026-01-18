@@ -11,7 +11,7 @@ const Footer = () => {
               <Gamepad2 className="w-5 h-5 text-primary" />
             </div>
             <span className="minecraft-text text-2xl text-foreground">
-              MC<span className="text-primary">SERVER</span>
+              FRIEND<span className="text-primary">CRAFT</span>
             </span>
           </div>
 
@@ -33,7 +33,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <p className="text-sm text-muted-foreground">
-            © 2024 MCServer. All rights reserved.
+            © 2024 FriendCraft. Made with ❤️ for friends.
           </p>
         </div>
 

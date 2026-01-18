@@ -22,7 +22,7 @@ const Navbar = () => {
               <Gamepad2 className="w-4 h-4 text-primary" />
             </div>
             <span className="minecraft-text text-xl text-foreground">
-              MC<span className="text-primary">SERVER</span>
+              FRIEND<span className="text-primary">CRAFT</span>
             </span>
           </a>
 
@@ -42,7 +42,7 @@ const Navbar = () => {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Button className="btn-minecraft bg-primary hover:bg-primary/90 text-primary-foreground px-6">
-              Play Now
+              Join Us
             </Button>
           </div>
 
@@ -74,7 +74,7 @@ const Navbar = () => {
                 </a>
               ))}
               <Button className="btn-minecraft bg-primary hover:bg-primary/90 text-primary-foreground w-full mt-2">
-                Play Now
+                Join Us
               </Button>
             </div>
           </div>
