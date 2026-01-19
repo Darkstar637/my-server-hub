@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import AboutUs from "@/components/AboutUs";
 import Discord from "@/components/Discord";
 import ServerEditions from "@/components/ServerEditions";
 import Footer from "@/components/Footer";
@@ -11,7 +10,6 @@ const Index = () => {
       <Navbar />
       <main>
         <Hero />
-        <AboutUs />
         <Discord />
         <ServerEditions />
       </main>
