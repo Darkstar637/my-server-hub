@@ -19,7 +19,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center section-glow overflow-hidden px-4 lg:px-8 xl:px-16">
+    <section className="relative min-h-screen flex items-center justify-center section-glow overflow-hidden px-4 lg:px-8 xl:px-16 pt-20 lg:pt-24">
       {/* Decorative elements */}
       <div className="absolute top-20 left-10 w-20 h-20 lg:w-28 lg:h-28 bg-primary/10 rounded-lg animate-float blur-sm" />
       <div className="absolute bottom-32 right-16 w-16 h-16 lg:w-24 lg:h-24 bg-accent/10 rounded-lg animate-float-delayed blur-sm" />
