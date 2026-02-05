@@ -37,10 +37,10 @@ const Discord = () => {
 
           {/* Stats */}
           <div className="grid grid-cols-3 divide-x divide-border bg-secondary/50 p-6 lg:p-8 xl:p-10">
-            <div className="text-center px-4 lg:px-6">
-              <div className="flex items-center justify-center gap-2 lg:gap-3 mb-2">
-                <Users className="w-5 h-5 lg:w-6 lg:h-6 text-primary" />
-                <span className="minecraft-text text-2xl md:text-3xl lg:text-4xl text-foreground">Friends</span>
+            <div className="text-center px-2 sm:px-4 lg:px-6">
+              <div className="flex items-center justify-center gap-1.5 sm:gap-2 lg:gap-3 mb-2">
+                <Users className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 text-primary flex-shrink-0" />
+                <span className="minecraft-text text-xl sm:text-2xl md:text-3xl lg:text-4xl text-foreground">Friends</span>
               </div>
               <p className="text-sm lg:text-base text-muted-foreground">Only</p>
             </div>
