@@ -14,26 +14,26 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+      <div className="max-w-6xl lg:max-w-7xl mx-auto px-4 lg:px-8 xl:px-12">
+        <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-card rounded-lg flex items-center justify-center border border-primary/30">
-              <Gamepad2 className="w-4 h-4 text-primary" />
+          <Link to="/" className="flex items-center gap-2 lg:gap-3">
+            <div className="w-8 h-8 lg:w-10 lg:h-10 bg-card rounded-lg flex items-center justify-center border border-primary/30">
+              <Gamepad2 className="w-4 h-4 lg:w-5 lg:h-5 text-primary" />
             </div>
-            <span className="minecraft-text text-xl text-foreground">
+            <span className="minecraft-text text-xl lg:text-2xl text-foreground">
               FRIEND<span className="text-primary">CRAFT</span>
             </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-8 lg:gap-10 xl:gap-12">
             {navItems.map((item) =>
               item.isExternal ? (
                 <a
                   key={item.label}
                   href={item.href}
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                  className="text-sm lg:text-base text-muted-foreground hover:text-primary transition-colors font-medium"
                 >
                   {item.label}
                 </a>
@@ -41,7 +41,7 @@ const Navbar = () => {
                 <Link
                   key={item.label}
                   to={item.href}
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                  className="text-sm lg:text-base text-muted-foreground hover:text-primary transition-colors font-medium"
                 >
                   {item.label}
                 </Link>
@@ -51,7 +51,7 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button className="btn-minecraft bg-primary hover:bg-primary/90 text-primary-foreground px-6">
+            <Button className="btn-minecraft bg-primary hover:bg-primary/90 text-primary-foreground px-6 lg:px-8 lg:py-5 lg:text-base">
               Join Us
             </Button>
           </div>
