@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { Copy, Check, Gamepad2 } from "lucide-react";
+import { Copy, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
+import voidreignLogo from "@/assets/voidreign-logo.png";
 
 const Hero = () => {
   const [copied, setCopied] = useState(false);
@@ -23,21 +24,23 @@ const Hero = () => {
       {/* Decorative elements */}
       <div className="absolute top-20 left-10 w-20 h-20 lg:w-28 lg:h-28 bg-primary/10 rounded-lg animate-float blur-sm" />
       <div className="absolute bottom-32 right-16 w-16 h-16 lg:w-24 lg:h-24 bg-accent/10 rounded-lg animate-float-delayed blur-sm" />
-      <div className="absolute top-1/3 right-1/4 w-12 h-12 lg:w-16 lg:h-16 bg-gold/10 rounded-lg animate-float blur-sm" />
-      <div className="hidden xl:block absolute top-1/4 left-1/6 w-20 h-20 bg-diamond/10 rounded-lg animate-float-delayed blur-sm" />
-      <div className="hidden xl:block absolute bottom-1/4 left-1/5 w-14 h-14 bg-emerald/10 rounded-lg animate-float blur-sm" />
+      <div className="absolute top-1/3 right-1/4 w-12 h-12 lg:w-16 lg:h-16 bg-primary/10 rounded-lg animate-float blur-sm" />
+      <div className="hidden xl:block absolute top-1/4 left-1/6 w-20 h-20 bg-accent/10 rounded-lg animate-float-delayed blur-sm" />
+      <div className="hidden xl:block absolute bottom-1/4 left-1/5 w-14 h-14 bg-primary/10 rounded-lg animate-float blur-sm" />
       
       <div className="relative z-10 text-center max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto">
-        {/* Server Logo/Icon */}
+        {/* Server Logo */}
         <div className="mb-8 flex justify-center">
-          <div className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 bg-card rounded-2xl lg:rounded-3xl flex items-center justify-center border border-primary/30 animate-pulse-glow">
-            <Gamepad2 className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 text-primary" />
-          </div>
+          <img 
+            src={voidreignLogo} 
+            alt="VoidReign Logo" 
+            className="w-32 h-32 md:w-40 md:h-40 lg:w-52 lg:h-52 object-contain drop-shadow-[0_0_30px_hsl(271,81%,56%,0.5)]"
+          />
         </div>
 
         {/* Title */}
         <h1 className="minecraft-text text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-foreground mb-4 lg:mb-6 glow-text">
-          FRIEND<span className="text-primary">CRAFT</span>
+          VOID<span className="text-primary">REIGN</span>
         </h1>
         
         {/* Subtitle */}

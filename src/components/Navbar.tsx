@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Gamepad2, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import voidreignLogo from "@/assets/voidreign-logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,11 +19,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 lg:gap-3">
-            <div className="w-8 h-8 lg:w-10 lg:h-10 bg-card rounded-lg flex items-center justify-center border border-primary/30">
-              <Gamepad2 className="w-4 h-4 lg:w-5 lg:h-5 text-primary" />
-            </div>
+            <img src={voidreignLogo} alt="VoidReign" className="w-8 h-8 lg:w-10 lg:h-10 object-contain" />
             <span className="minecraft-text text-xl lg:text-2xl text-foreground">
-              FRIEND<span className="text-primary">CRAFT</span>
+              VOID<span className="text-primary">REIGN</span>
             </span>
           </Link>
 
@@ -30,21 +29,9 @@ const Navbar = () => {
           <div className="hidden md:flex items-center gap-8 lg:gap-10 xl:gap-12">
             {navItems.map((item) =>
               item.isExternal ? (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  className="text-sm lg:text-base text-muted-foreground hover:text-primary transition-colors font-medium"
-                >
-                  {item.label}
-                </a>
+                <a key={item.label} href={item.href} className="text-sm lg:text-base text-muted-foreground hover:text-primary transition-colors font-medium">{item.label}</a>
               ) : (
-                <Link
-                  key={item.label}
-                  to={item.href}
-                  className="text-sm lg:text-base text-muted-foreground hover:text-primary transition-colors font-medium"
-                >
-                  {item.label}
-                </Link>
+                <Link key={item.label} to={item.href} className="text-sm lg:text-base text-muted-foreground hover:text-primary transition-colors font-medium">{item.label}</Link>
               )
             )}
           </div>
@@ -57,15 +44,8 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            className="md:hidden p-2"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            {isOpen ? (
-              <X className="w-6 h-6 text-foreground" />
-            ) : (
-              <Menu className="w-6 h-6 text-foreground" />
-            )}
+          <button className="md:hidden p-2" onClick={() => setIsOpen(!isOpen)}>
+            {isOpen ? <X className="w-6 h-6 text-foreground" /> : <Menu className="w-6 h-6 text-foreground" />}
           </button>
         </div>
 
@@ -75,28 +55,12 @@ const Navbar = () => {
             <div className="flex flex-col gap-4">
               {navItems.map((item) =>
                 item.isExternal ? (
-                  <a
-                    key={item.label}
-                    href={item.href}
-                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    {item.label}
-                  </a>
+                  <a key={item.label} href={item.href} className="text-sm text-muted-foreground hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>{item.label}</a>
                 ) : (
-                  <Link
-                    key={item.label}
-                    to={item.href}
-                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    {item.label}
-                  </Link>
+                  <Link key={item.label} to={item.href} className="text-sm text-muted-foreground hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>{item.label}</Link>
                 )
               )}
-              <Button className="btn-minecraft bg-primary hover:bg-primary/90 text-primary-foreground w-full mt-2">
-                Join Us
-              </Button>
+              <Button className="btn-minecraft bg-primary hover:bg-primary/90 text-primary-foreground w-full mt-2">Join Us</Button>
             </div>
           </div>
         )}

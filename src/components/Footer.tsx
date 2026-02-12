@@ -1,5 +1,5 @@
-import { Gamepad2 } from "lucide-react";
 import { Link } from "react-router-dom";
+import voidreignLogo from "@/assets/voidreign-logo.png";
 
 const Footer = () => {
   return (
@@ -8,36 +8,24 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 lg:gap-8">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 lg:gap-4">
-            <div className="w-10 h-10 lg:w-12 lg:h-12 bg-card rounded-lg flex items-center justify-center border border-primary/30">
-              <Gamepad2 className="w-5 h-5 lg:w-6 lg:h-6 text-primary" />
-            </div>
+            <img src={voidreignLogo} alt="VoidReign" className="w-10 h-10 lg:w-12 lg:h-12 object-contain" />
             <span className="minecraft-text text-2xl lg:text-3xl text-foreground">
-              FRIEND<span className="text-primary">CRAFT</span>
+              VOID<span className="text-primary">REIGN</span>
             </span>
           </Link>
 
           {/* Links */}
           <div className="flex flex-wrap items-center justify-center gap-6 lg:gap-8 xl:gap-10 text-sm lg:text-base">
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors font-medium">
-              Store
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors font-medium">
-              Rules
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors font-medium">
-              Support
-            </a>
-            <a href="/#discord" className="text-muted-foreground hover:text-primary transition-colors font-medium">
-              Discord
-            </a>
-            <Link to="/about" className="text-muted-foreground hover:text-primary transition-colors font-medium">
-              About
-            </Link>
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors font-medium">Store</a>
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors font-medium">Rules</a>
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors font-medium">Support</a>
+            <a href="/#discord" className="text-muted-foreground hover:text-primary transition-colors font-medium">Discord</a>
+            <Link to="/about" className="text-muted-foreground hover:text-primary transition-colors font-medium">About</Link>
           </div>
 
           {/* Copyright */}
           <p className="text-sm lg:text-base text-muted-foreground">
-            © 2025 FriendCraft. Made with ❤️ for friends.
+            © 2025 VoidReign. Made with ❤️ for friends.
           </p>
         </div>
 
