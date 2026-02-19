@@ -18,15 +18,15 @@ const AboutUs = () => {
         <div className="bg-card rounded-xl p-8 border border-border card-glow">
           <div className="space-y-6">
             <p className="text-muted-foreground leading-relaxed">
-              FriendCraft started as a small world between a few friends who wanted a chill place to hang out and play Minecraft together. No drama, no sweats – just good vibes and blocky adventures.
+              VoidReign began as a private world for a small group of friends who wanted a calm space to play, build, and explore together. No drama, no sweats — just good vibes and endless adventures beyond the void.
             </p>
             
             <p className="text-muted-foreground leading-relaxed">
-              We keep our server whitelisted to maintain that cozy, safe environment where everyone knows everyone. Whether you're into building epic bases, going on adventures, or just vibing while farming, there's a spot for you here.
+              The server is whitelisted to keep that warm, familiar atmosphere where every player matters and everyone knows each other. Whether you're crafting massive bases, setting out on journeys, or relaxing with a bit of farming, you'll always have a place here.
             </p>
 
             <p className="text-muted-foreground leading-relaxed">
-              Our goal is simple: have fun with friends. We're not trying to be the biggest server out there – we're just here to enjoy the game with people we trust.
+              VoidReign isn’t about becoming the biggest server — it’s about ruling our own little universe and enjoying Minecraft with people we trust.
             </p>
           </div>
 
