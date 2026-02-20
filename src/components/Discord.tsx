@@ -28,7 +28,7 @@ const Discord = () => {
                 asChild
                 className="bg-white text-[hsl(235,86%,55%)] hover:bg-white/90 px-8 py-6 lg:px-12 lg:py-7 text-lg lg:text-xl font-bold rounded-lg lg:rounded-xl btn-minecraft"
               >
-                <a href="https://discord.gg/" target="_blank" rel="noopener noreferrer">
+                <a href="https://discord.gg/AdEZzWdtgU" target="_blank" rel="noopener noreferrer">
                   Join Discord Server
                 </a>
               </Button>
