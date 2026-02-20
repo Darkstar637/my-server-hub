@@ -25,7 +25,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <p className="text-sm lg:text-base text-muted-foreground">
-            © 2025 VoidReign. Made with ❤️ for friends.
+            © 2026 VoidReign. Made with ❤️ for friends.
           </p>
         </div>
 
