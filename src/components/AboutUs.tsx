@@ -43,7 +43,7 @@ const AboutUs = () => {
               <div className="feature-icon w-fit mx-auto mb-2">
                 <Calendar className="w-5 h-5 text-primary" />
               </div>
-              <div className="minecraft-text text-2xl text-primary">2024</div>
+              <div className="minecraft-text text-2xl text-primary">2026</div>
               <div className="text-xs text-muted-foreground">Started</div>
             </div>
             <div className="text-center">
