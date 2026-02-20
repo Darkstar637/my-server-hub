@@ -38,8 +38,8 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button className="btn-minecraft bg-primary hover:bg-primary/90 text-primary-foreground px-6 lg:px-8 lg:py-5 lg:text-base">
-              Join Us
+            <Button asChild className="btn-minecraft bg-primary hover:bg-primary/90 text-primary-foreground px-6 lg:px-8 lg:py-5 lg:text-base">
+              <a href="https://discord.gg/AdEZzWdtgU" target="_blank" rel="noopener noreferrer">Join Us</a>
             </Button>
           </div>
 
@@ -60,7 +60,9 @@ const Navbar = () => {
                   <Link key={item.label} to={item.href} className="text-sm text-muted-foreground hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>{item.label}</Link>
                 )
               )}
-              <Button className="btn-minecraft bg-primary hover:bg-primary/90 text-primary-foreground w-full mt-2">Join Us</Button>
+              <Button asChild className="btn-minecraft bg-primary hover:bg-primary/90 text-primary-foreground w-full mt-2">
+                <a href="https://discord.gg/AdEZzWdtgU" target="_blank" rel="noopener noreferrer">Join Us</a>
+              </Button>
             </div>
           </div>
         )}
