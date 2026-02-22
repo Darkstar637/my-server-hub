@@ -7,8 +7,8 @@ const editions = [
   {
     title: "Java Edition",
     icon: "☕",
-    ip: "play.mcserver.net",
-    port: null,
+    ip: "t3.hexonode.fun",
+    port: "25999",
     version: "1.8 - 1.20.4",
     description: "Full PC experience with all features, mods support, and the complete Minecraft adventure.",
     features: ["Full modding support", "Resource packs", "Shaders compatible"],
@@ -17,8 +17,8 @@ const editions = [
   {
     title: "Bedrock Edition",
     icon: "🎮",
-    ip: "bedrock.mcserver.net",
-    port: "19132",
+    ip: "t3.hexonode.fun",
+    port: "25999",
     version: "Latest",
     description: "Play on mobile, console, or Windows 10. Cross-platform with your friends anywhere.",
     features: ["Cross-platform play", "Mobile & Console", "Xbox & PlayStation"],

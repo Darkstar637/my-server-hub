@@ -7,7 +7,7 @@ import voidreignLogo from "@/assets/voidreign-logo.png";
 const Hero = () => {
   const [copied, setCopied] = useState(false);
   const { toast } = useToast();
-  const serverIP = "play.mcserver.net";
+  const serverIP = "t3.hexonode.fun:25999";
 
   const copyIP = () => {
     navigator.clipboard.writeText(serverIP);
